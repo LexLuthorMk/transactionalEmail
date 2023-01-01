@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transactional.dtd">
+<html xmlns="http://w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactional Email</title>
+    
+    <style>
+        html{
+            font-family: sans-serif;
+            font-size: 10px;
+            color: #000;
+            box-sizing: border-box;
+        }
+        *{
+            box-sizing: inherit;
+            padding: 0;
+            margin: 0;
+        }
+        table{
+            border-spacing: 0;
+            width: 100%;
+        }
+
+        #wrapper{
+            background-color: #fff;
+        }
+        #container{
+            max-width: 500px;
+            background-color:#00bfff;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        #header td{
+            text-align: center;
+            color: #fff;
+            padding: 80px 20px 10px;
+        }
+        #header td h1{
+            font-size: 2.1rem;
+            font-weight: 500;
+        }
+        #header td p{
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+        #header td a{
+            color: #000;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        #receipt{
+            font-size: 1.2rem;
+            background-color: #fff;
+            padding: 30px 5px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #receipt h1{
+            font-size: 2rem;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        #receipt th{
+            text-transform: uppercase;
+            color: #808080;
+            text-align: left;
+            padding: 10px 5px;
+        }
+        #receipt td{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        #receipt .blue-color{
+            color: #00bfff;
+        }
+
+        #footer td{
+            font-size: 1.2rem;
+            color: #fff;
+            text-align: center;
+            padding: 30px 10px 10px;
+            border-top: 1px solid gray;
+        }
+        @media screen and (min-width: 380px){
+            #header td h1{
+                font-size: 2.4rem;
+                font-weight: 500;
+            }
+            #header td p{
+                font-size: 1.7rem;
+            }
+
+            #receipt{
+                font-size: 1.4rem;
+            }
+            #receipt h1{
+                font-size: 2.2rem;
+            }
+           
+            #footer td{
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <table id="container">
+            <tr>
+                <td>
+                    <table id="header">
+                        <tr>
+                            <td>
+                                <h1>Your Fitbit Order has shipped.</h1>
+                                <p>Are you smiling? You are totally smiling.</p>
+                                <hr style="border-top: 1px solid #4e4949;">
+                                <p style="font-size: 2rem;">
+                                    No need to campout by the mailbox!</p>
+                                <p>Use this number to track your package:<br>
+                                    <a href="tel:+263 78 614 4325">+263 78 614 4325</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table id="receipt">
+                        <tr>
+                            <td>
+                                <h1><span class="blue-color">Here's what we shipped: </span></h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 10px;
+                            border-bottom: 1px solid #808080;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>Order #: XXXXXXXX</p>
+                                        </td>
+                                        <td style="text-align: right;">
+                                            <p>Order Date: 01/01/2023</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 25px;
+                            border-bottom: 1px solid #808080;">
+                                <table style="padding: 0 5px;">
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Qty</th>
+                                        <th>Cost</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Replacement Fitbit Surge (Black)-Large<br>
+                                            <span class="blue-color">$0.00</span></td>
+                                        <td>1</td>
+                                        <td>$0.00</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px 0;
+                            border-bottom: 1px dashed #808080;">
+                                <p><span style="color: #808080;">Shipping method:</span> 
+                                    Free(5 Business Days) via FedEx SMart Post</p>
+                                <p style="font-size: 1.3rem; margin-top: 3px;">
+                                    *Some shipping areas may take up to 7 business days 
+                                    for delivery.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px 0;">
+                                <p>
+                                    <span class="blue-color">Send to: </span><br>
+                                    19148 XXXXXXXX<br>XXXXXXXX<br>
+                                    XXXXXXXX
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table id="footer">
+                        <tr>
+                            <td>
+                                <p>If you have any questions about your order, please 
+                                    <a href="#">contact us</a>.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+<!--fix footer border, change some colors-->
